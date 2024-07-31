@@ -1,0 +1,119 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* header */
+header {
+  padding: 15px;
+  background-color: aqua;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo i {
+  display: block;
+  font-size: 60px;
+}
+.searchbar {
+  display: flex;
+  width: 350px;
+  height: 50px;
+  border: 5px solid rgba(113, 111, 111, 0.25);
+  border-radius: 30px;
+  background-color: antiquewhite;
+}
+.searchbar button {
+  border: none;
+  width: 20%;
+  border-radius: 30px 0 0 30px;
+  mix-blend-mode: multiply;
+  cursor: pointer;
+  padding-right: 15px;
+}
+.searchbar button:hover {
+  opacity: 0.7;
+}
+.searchbar input {
+  border: none;
+  width: 70%;
+  height: 90%;
+}
+.option {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.points {
+  width: 115px;
+  background-color: #d9d9d9;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+}
+.points div,
+.points i {
+  width: 100%;
+}
+/* main section */
+.container {
+  display: flex;
+  overflow: auto;
+}
+.card {
+  min-width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: bisque;
+}
+.section {
+  cursor: pointer;
+  width: 100%;
+  height: 25px;
+  background-color: rgb(136, 94, 94);
+  margin: 5px;
+  overflow: auto;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.content {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 400px;
+  height: 250px;
+  background-color: bisque;
+}
+.subTask-container {
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  overflow: scroll;
+}
+.subTask {
+  width: 90%;
+  height: 20px;
+  background-color: black;
+  margin-bottom: 5px;
+}
